@@ -1,10 +1,17 @@
 #include "main.h"
 /**
  * _islower - check the code
- * Return: Always 0
+ * Return: 0(failure) 1(success)
  */
 
 int _islower(int c)
 {
-	return (c >= 97 && c <= 122);
+	if (c >= 97 && c <= 122)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
