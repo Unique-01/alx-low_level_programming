@@ -4,7 +4,7 @@
  * Return: Always 0
  */
 
-int _islower(void)
+int _islower(int c)
 {
-    
+	return (c >= 97 && c <= 122);
 }
