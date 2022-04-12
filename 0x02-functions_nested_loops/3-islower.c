@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * _islower - check the code
- * Return: 0(failure) 1(success)
+ * @c: int
+ * Return: 1
  */
 
 int _islower(int c)
