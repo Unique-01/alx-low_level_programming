@@ -3,7 +3,7 @@
  * main - main block
  * Return:0
  */
-int _putchar(char c)
+int _putchar(char a)
 {
 	char a[] = "_putchar";
 	int i;
