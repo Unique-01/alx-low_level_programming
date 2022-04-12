@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _abs - check the code
+ * @a: int
  * Return: 0 or 1
  */
 
