@@ -11,7 +11,7 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		putchar('-');
+		_putchar('-');
 		n *= -1;
 	}
 
@@ -21,6 +21,6 @@ void print_number(int n)
 	for (; divisor >= 1; n %= divisor, divisor /= 10)
 	{
 		resp = n / divisor;
-		putchar('0' + resp);
+		_putchar('0' + resp);
 	}
 }
