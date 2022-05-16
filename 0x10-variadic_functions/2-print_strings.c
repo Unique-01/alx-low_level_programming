@@ -6,7 +6,7 @@
  * print_strings - print tyhe parameters
  * @separator: the separator between the strings
  * @n:number of integers passed to the function
- *
+ * Return: void
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
