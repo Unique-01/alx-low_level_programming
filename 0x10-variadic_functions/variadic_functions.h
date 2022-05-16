@@ -1,25 +1,26 @@
 #ifndef VARIADIC_FUNCTIONS
 #define VARIADIC_FUNCTIONS
 
-int _putchar(char n);
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
-void print_all(const char * const format, ...);
+void print_all(const char *const format, ...);
+int _putchar(char c);
+
+void print_int(va_list list);
+void print_float(va_list list);
+void print_char(va_list list);
+void print_str(va_list list);
 
 /**
- * struct format_struct - format-type class
- * @format: format identifier
- * @fmt_print_func: pointer to function that prints in the format of @format
+ * struct printTypeStruct - structure definition of a printTypeStruct
+ * @type: type
+ * @printer: function to print
  */
-
-struct format_struct
+typedef struct printTypeStruct
 {
-	char format;
-	void (*fmt_print_func)(va_list *arg_list);
-};
-
-typedef struct format_struct format_struct_ptr;
-
+    char *type;
+    void (*printer)(va_list);
+} printTypeStruct;
 
 #endif
